@@ -26,5 +26,4 @@ while True:
             print(f"메모가 삭제되었습니다: '{removed}'")
         else:
             print("존재하지 않는 번호입니다.")
-    elif cmd == "4":
-        break
+    
