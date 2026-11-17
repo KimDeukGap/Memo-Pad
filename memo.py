@@ -18,12 +18,7 @@ while True:
         memos.append(memo)
         json.dump(memos, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         print("메모가 저장되었습니다.")
-    elif cmd == "3":
-        idx = int(input("삭제할 메모 번호: ")) - 1
-        if 0 <= idx < len(memos):
-            removed = memos.pop(idx)
-            json.dump(memos, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-            print(f"메모가 삭제되었습니다: '{removed}'")
+    
         else:
             print("존재하지 않는 번호입니다.")
     elif cmd == "4":
